@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Custom animations for the submission flow */
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fade-in-down {
+    from { 
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes confetti-explosion {
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-in-out forwards;
+  }
+
+  .animate-fade-in-down {
+    animation: fade-in-down 0.5s ease-out forwards;
+  }
+
+  .animate-confetti-explosion {
+    animation: confetti-explosion 1.5s ease-out forwards;
+  }
+}
+
+:root {
+  /* Color palette as specified in the design requirements */
+  --royal-blue: #002366;       /* Primary color */
+  --metallic-gold: #D4AF37;    /* Accent color */
+  --warm-beige: #F4EBD0;       /* Background alternate */
+  --white: #FFFFFF;            /* Body text on dark backgrounds */
+  --black: #111111;            /* Footer text or text on beige */
+  --dark-gray: #333333;        /* Alternative to black for some text */
+
+  /* Festival theme colors in HSL format for Tailwind */
+  --festival-blue: 222, 100%, 20%;    /* Royal Blue (Primary) #002366 */
+  --festival-gold: 46, 59%, 52%;      /* Metallic Gold (Accent) #D4AF37 */
+  --festival-beige: 43, 43%, 89%;     /* Warm Beige (Background) #F4EBD0 */
+
+  /* Shadcn compatibility variables */
+  --background: 0 0% 100%;
+  --foreground: 0 0% 20%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 20%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 222 100% 20%;           /* Royal Blue */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 20%;
+  --secondary-foreground: 46 59% 52%; /* Gold */
+  --accent: 46 59% 52%;              /* Gold */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 46 59% 52%;                /* Gold */
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222 100% 20%;         /* Royal Blue */
+  --foreground: 0 0% 98%;
+  --muted: 222 30% 25%;
+  --muted-foreground: 210 40% 90%;
+  --popover: 222 100% 20%;
+  --popover-foreground: 0 0% 98%;
+  --card: 222 100% 20%;
+  --card-foreground: 0 0% 98%;
+  --border: 215 27.9% 16.9%;
+  --input: 215 27.9% 16.9%;
+  --primary: 46 59% 52%;              /* Gold in dark mode */
+  --primary-foreground: 222 100% 20%; /* Royal Blue */
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 46 59% 52%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    @apply antialiased bg-background text-foreground;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    @apply font-bold;
+  }
+
+  button, 
+  .button, 
+  a.button,
+  input[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    @apply uppercase font-semibold;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+  
+  /* Ensure proper text contrast */
+  .bg-festival-blue {
+    @apply text-white;
+  }
+  
+  .bg-festival-beige {
+    @apply text-black;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Responsive design helpers */
+@layer components {
+  .container-responsive {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Updated scroll margin for consistent section alignment */
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24 scroll-mt-32;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+}
+
+/* Font family classes for explicit usage */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Consistent scroll margin for all sections that are targets of navigation */
+#about, 
+#festival-highlights, 
+#contact {
+  scroll-margin-top: 100px;
+}
+
+/* No need for scroll margin - we handle the exact positioning in JavaScript */
+#submissions {
+  scroll-margin-top: 0;
+}
+
+#share-your-vision {
+  scroll-margin-top: 0;
+}
+
+/* Festival theme specific utility classes */
+.text-festival-blue {
+  color: var(--royal-blue);
+}
+
+.text-festival-gold {
+  color: var(--metallic-gold);
+}
+
+.bg-festival-blue {
+  background-color: var(--royal-blue);
+}
+
+.bg-festival-gold {
+  background-color: var(--metallic-gold);
+}
+
+.bg-festival-beige {
+  background-color: var(--warm-beige);
+}
+
+.border-festival-blue {
+  border-color: var(--royal-blue);
+}
+
+.border-festival-gold {
+  border-color: var(--metallic-gold);
+}
+
+/* Button styles as per design spec */
+.btn-primary {
+  @apply bg-festival-blue text-festival-gold font-montserrat uppercase font-semibold py-3 px-6 rounded-md 
+  transition-all hover:brightness-110 hover:shadow-md;
+}
+
+.btn-secondary {
+  @apply bg-festival-gold text-festival-blue font-montserrat uppercase font-semibold py-3 px-6 rounded-md
+  transition-all hover:brightness-110 hover:shadow-md;
+}
+
+/* Typography styles following the design spec */
+.heading-xl {
+  @apply font-montserrat font-extrabold text-4xl md:text-5xl lg:text-6xl text-festival-gold uppercase tracking-wide;
+}
+
+.heading-lg {
+  @apply font-montserrat font-bold text-3xl md:text-4xl uppercase tracking-wide;
+}
+
+.heading-md {
+  @apply font-montserrat font-semibold text-2xl md:text-3xl uppercase tracking-wide;
+}
+
+.subheading {
+  @apply font-montserrat font-semibold text-lg md:text-xl tracking-wide;
+}
+
+.body-text {
+  @apply font-open-sans text-base md:text-lg leading-relaxed;
+}
+
+/* Navigation link styles */
+.nav-link {
+  @apply font-montserrat uppercase text-festival-gold hover:text-white transition-colors
+  tracking-wider font-semibold py-2 px-3;
+}
+
+/* Utility class for Indonesian-inspired decorative elements */
+.batik-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Improved mobile touch targets */
+@media (max-width: 640px) {
+  button, 
+  .button,
+  a.button,
+  [role="button"],
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    @apply min-h-[44px] min-w-[44px];
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  0% { 
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes confetti-explosion {
+  0% { transform: scale(0); opacity: 0.2; }
+  50% { transform: scale(1); opacity: 0.1; }
+  100% { transform: scale(1.2); opacity: 0; }
+}
+
+/* Animation classes */
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.5s ease-out forwards;
+}
+
+.animate-pulse {
+  animation: pulse 3s infinite;
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+.animate-confetti-explosion {
+  animation: confetti-explosion 2s ease-out forwards;
+}
+
+/* Submission flow styles */
+.submission-stage-transition {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Payment and confirmation overlays */
+#paymentSection,
+#confirmationSection,
+#loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.98);
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+#loadingOverlay {
+  z-index: 100;
+  pointer-events: none;
+}
+
+/* Prevent scrolling during modal display */
+body:has(#paymentSection[style*="opacity: 1"]),
+body:has(#confirmationSection[style*="opacity: 1"]) {
+  overflow: hidden;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Responsive header styles */
+@media (max-width: 768px) {
+  .nav-container {
+    font-size: 14px;
+  }
+  
+  .logo-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    font-size: 12px;
+  }
+  
+  .container-responsive {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
