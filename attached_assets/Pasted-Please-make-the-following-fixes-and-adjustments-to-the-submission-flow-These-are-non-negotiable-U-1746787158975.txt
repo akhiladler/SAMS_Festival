@@ -1,0 +1,56 @@
+Please make the following fixes and adjustments to the submission flow. These are **non-negotiable UX improvements** required for clarity, reliability, and audience resonance:
+
+---
+
+1. 🐞 **Fix the 'Begin Your Journey' Button Bug**
+- Currently, clicking "Begin Your Journey" after uploading a file and entering a title often resets the submission process without warning.
+- The first click should reliably initiate submission and transition to the next screen.
+- Investigate and resolve any state-reset or race condition bugs. Ensure there is no need to submit twice.
+
+---
+
+2. 🔁 **Correct the Payment Flow Timing**
+- After the "Submission Received!" screen, the current implementation immediately shows "Processing your payment…" even though the user has not yet clicked “Pay Now.”
+- This must be corrected. The order should be:
+  1. ✅ Submission received message.
+  2. ⏳ 2–3 second natural pause (or button click).
+  3. 💳 "Final Step – Pay Your Submission Fee" screen (Rp 188,000).
+  4. 👆 After user clicks "Pay Now," show “Processing your payment…” loading screen.
+  5. ✅ After 2–3 seconds, show final confirmation screen.
+
+---
+
+3. 🎉 **Add Celebration to Final Confirmation**
+- The current “You're All Set” screen feels flat and uneventful.
+- Add a lightweight celebration animation: confetti, sparkles, balloons—anything that communicates joy and completion.
+- Keep it simple (1–2 seconds), no sound needed.
+
+---
+
+4. 📝 **Simplify and Localize the Copy (Tone + Clarity)**
+- Avoid flowery language. Use simple, honest, friendly words.
+- Examples:
+  - “Submission received! Thanks for submitting your film. You're almost done. Just one last step.”
+  - “Final Step – Pay Your Submission Fee”
+  - “You're All Set! Your film is now part of the SAMS Festival 2025 selection. Our team will review it soon. We'll contact you if we need anything else.”
+- Remove abstract or elite phrases like: “renaissance”, “cinephiles”, “Indonesia’s creative revolution” etc.
+- Remember: our audience includes people from small towns and rural areas. Keep it human, warm, and clear.
+
+---
+
+💡 Reminder:
+- Submission fee = Rp 188,000
+- Keep button labels consistent and human:
+  - “Begin Your Journey”
+  - “Continue to Payment”
+  - “Pay Now”
+  - “Return to Homepage”
+
+---
+
+Implement these adjustments fully and test the full submission flow end-to-end to verify:
+
+- ✅ First click works
+- ✅ Payment step is logical
+- ✅ Copy is clear and welcoming
+- ✅ Celebration feels authentic

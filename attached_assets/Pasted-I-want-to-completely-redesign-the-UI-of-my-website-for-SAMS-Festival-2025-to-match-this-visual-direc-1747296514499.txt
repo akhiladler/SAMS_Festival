@@ -1,0 +1,131 @@
+I want to completely redesign the UI of my website for SAMS Festival 2025 to match this visual direction:
+
+OVERALL STYLE & THEME
+Make the site elegant, professional, and inspired by Indonesian culture, matching the aesthetic of my brand Sam’s Studios.
+
+Use a royal blue and gold color palette:
+
+Primary background: #002366 (Deep Royal Blue)
+
+Accent color: #D4AF37 (Metallic Gold)
+
+Secondary background: #F4EBD0 (Beige/Warm Neutral) for soft contrast areas
+
+HEADER
+Top left: Logo that says SAMS STUDIOS using gold text on dark blue
+
+Top right: Nav links:
+
+About
+
+Submissions
+
+Festival Highlights
+
+Contact
+
+Font for nav: Montserrat Semi-Bold, uppercase, gold text, spacing between letters
+
+HERO SECTION
+Centered on screen. Full width.
+
+Heading:
+SAMS FESTIVAL 2025 → Large, bold, gold text
+
+Subheading:
+A national celebration of Indonesian cinema, art, and performance → white or light gold, slightly smaller
+
+Tagline:
+One Nation. Many Stories. → italic or semi-bold below the subheading
+
+Background:
+
+Use soft Indonesian motifs like:
+
+Temple outlines (Borobudur-style)
+
+Batik textures (low opacity overlay)
+
+Traditional elements subtly placed in corners
+
+No galaxy, no fantasy, no stars
+
+CALL-TO-ACTION BUTTONS (right under hero text)
+Share Your Vision
+
+Button background: Royal Blue
+
+Text: Gold
+
+Font: Montserrat Bold, ALL CAPS
+
+Learn More
+
+Button background: Gold
+
+Text: Royal Blue
+
+Same font and size
+
+Add hover effect: color inverts or subtle glow
+
+BODY SECTIONS
+Use horizontal sections with background color alternating subtly between:
+
+Royal Blue (#002366) and
+
+Warm Beige (#F4EBD0)
+
+SECTION STRUCTURE:
+ABOUT
+
+Header: ABOUT in gold
+
+Text: brief description of festival
+
+Font: Lato or Open Sans
+
+SUBMISSIONS
+
+Header: SUBMISSIONS
+
+Brief info + button: “Submit a Film”
+
+Button: Gold bg, blue text
+
+HIGHLIGHTS
+
+Header: HIGHLIGHTS
+
+Show cards or icons for events, guests, screenings
+
+CONTACT
+
+Header: CONTACT
+
+Email or contact form
+
+Include simple social media icons (white or gold)
+
+FONTS
+Headings: Montserrat Bold
+
+Subheadings: Montserrat Semi-Bold
+
+Body Text: Open Sans Regular or Lato
+
+All fonts should be web-safe or linked via Google Fonts
+
+RESPONSIVENESS
+Navigation collapses into hamburger on mobile
+
+Text and buttons scale properly
+
+Use a grid or flexbox layout for easy responsiveness
+
+EXTRA NOTES
+Avoid decorative overload. Keep it clean and clear.
+
+Do NOT use galaxy, space, fantasy, or neon styles.
+
+The tone should be professional but creative — like a business pitch for a premium national festival.

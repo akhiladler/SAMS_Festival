@@ -1,0 +1,59 @@
+We are finalizing the SAMS Festival film submission flow. Please follow these instructions carefully and in full:
+
+🔧 1. Fix Upload Reset Bug
+Problem:
+Sometimes, after a user uploads a file and clicks “Begin Your Journey,” the form resets and they must re-upload.
+
+Action:
+Fix this bug so the upload and title input work properly on the first try. Do not allow the form to clear unexpectedly.
+
+🧭 2. Improve Text and Steps for Better Clarity
+Update the text across the submission flow so it is simple, clear, and easy to understand for users in small towns and villages. Use short sentences. Avoid complex or poetic words. Use everyday Indonesian English.
+
+A. After Upload and Title Are Complete:
+Replace:
+
+“Your film has been warmly received. Just one final step to join our community of storytellers...”
+
+With:
+
+Title: Submission received!
+Text: "Thanks for submitting your film. You're almost done. Just one last step."
+Button: Change from "Celebrate Your Submission" → "Continue to Payment"
+
+💳 3. Create a Simple, Believable Payment Screen (Simulation Only)
+After the user clicks "Continue to Payment", take them to a new screen that looks like a real payment step.
+
+Title: Final Step: Pay Your Submission Fee
+
+Text:
+"To confirm your submission to SAMS Festival 2025, please pay the entry fee below."
+
+Fee Amount:
+Rp 188,000
+
+Two Buttons:
+
+"Pay Now" → This can be a fake button that shows a brief loading animation and then takes the user to the next (final) screen.
+
+"Cancel" → This returns the user to the homepage.
+
+✅ 4. Final Confirmation Screen (After Fake Payment)
+Once the user clicks “Pay Now” and the fake loading finishes, take them to the final screen:
+
+Title: You're All Set!
+
+Text:
+"Your film is now part of the SAMS Festival 2025 selection. Our team will review it soon."
+
+Optional Subtext (smaller):
+"We’ll contact you if we need anything else. Thank you for being part of this festival."
+
+🎉 5. (Optional) Add Celebration Animation
+If possible, after the final screen appears, show a short visual celebration:
+
+Confetti animation, checkmark pulse, or sparkle effect
+
+Just 1–2 seconds, subtle and light
+
+Purpose: make the user feel proud their film was accepted

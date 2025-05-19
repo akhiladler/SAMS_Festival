@@ -1,0 +1,78 @@
+Please update my SAMS Festival 2025 website with the following specific changes and enhancements. Please use the image attached as an inspiration and guide for the design. This is to improve the visual consistency, cultural feel, and clarity of our core call-to-action.
+
+1.⁠ ⁠PRIORITIZE "SHARE YOUR VISION" AS MAIN CTA
+Problem: On the homepage, the "Learn More" button currently looks more prominent than the main CTA.
+
+Fix:
+
+Make "Share Your Vision" the primary button:
+
+Larger size than "Learn More"
+
+Background color: #D4AF37 (Gold)
+
+Text color: #002366 (Royal Blue)
+
+Font: Montserrat Bold, uppercase
+
+Optional hover effect: subtle glow or border highlight
+
+"Learn More" should be secondary in style:
+
+Transparent or white background with gold border
+
+Smaller or visually less dominant
+
+2.⁠ ⁠FIX INCONSISTENCY IN "SHARE YOUR VISION" SECTION (SCROLL-DOWN)
+Problem: The section style is inconsistent with the rest of the site (white background, red/pink icons, flat visual design).
+
+Fix:
+
+Background: Use the same deep blue or warm beige used elsewhere (#002366 or #F4EBD0)
+
+Text and Fonts:
+
+Heading: Montserrat Extra-Bold, Gold color
+
+Body Text: Open Sans or Lato, White or Gold depending on background
+
+Icons: Remove pink/red icons. Replace with line icons or flat icons in gold/white/blue
+
+Cards or Steps: Add subtle gold borders or hover shadow effects for design consistency
+
+3.⁠ ⁠ENHANCE HERO SECTION VISUALS WITH CULTURAL ELEMENTS
+Problem: The top banner looks too plain compared to the original mockup. The current background is too flat and lacks cultural identity.
+
+Fix:
+
+Add batik patterns to the hero background:
+
+Use a subtle low-opacity batik texture across the background
+
+Recommended placement: faded into top corners or behind headline
+
+Ensure contrast remains high for readability
+
+Add temple silhouette or shadow effect:
+
+Include a silhouette of Borobudur or Prambanan temples in gold near the bottom of the hero section
+
+It should blend naturally with the background but add depth
+
+Do NOT add galaxy, space, or fantasy elements
+
+4.⁠ ⁠GENERAL VISUAL CONSISTENCY
+Across all sections, please make sure:
+
+Font usage is consistent: use Montserrat for headings, Open Sans or Lato for body
+
+Buttons follow the same shape, hover behavior, and color logic
+
+Section backgrounds alternate between Royal Blue and Warm Beige for contrast
+
+All iconography and UI elements use the same color family (gold, white, royal blue)
+
+5.⁠ ⁠RESPONSIVENESS (KEEP EXISTING)
+No changes required here. Current responsive layout is working well. Just make sure all enhancements above carry through properly to mobile.
+
+Please update the site accordingly.

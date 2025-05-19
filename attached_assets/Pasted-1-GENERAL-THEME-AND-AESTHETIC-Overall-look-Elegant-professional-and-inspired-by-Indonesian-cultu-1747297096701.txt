@@ -1,0 +1,150 @@
+1. GENERAL THEME AND AESTHETIC
+Overall look: Elegant, professional, and inspired by Indonesian culture.
+
+Style goal: The website should feel like a national-level creative festival backed by a cinema company.
+
+Layout type: Full-width layout with sections stacked vertically, clean and minimal design.
+
+2. COLORS
+Use this color palette throughout the site:
+
+Royal Blue (Primary): #002366
+
+Metallic Gold (Accent): #D4AF37
+
+Warm Beige (Background alternate): #F4EBD0
+
+White: for body text on dark backgrounds
+
+Black or Dark Gray: for footer or text on beige backgrounds
+
+3. TYPOGRAPHY
+Use these fonts (Google Fonts are okay):
+
+Headings: Montserrat Bold
+
+Subheadings: Montserrat Semi-Bold
+
+Body Text: Open Sans or Lato Regular
+
+All navigation links and buttons: use Montserrat in uppercase
+
+Ensure spacing and padding are balanced; text should not touch edges
+
+4. HEADER (TOP OF PAGE)
+Left side: The logo or name “SAMS STUDIOS” in uppercase, gold text, royal blue background.
+
+Right side: Navigation menu with the following links:
+
+ABOUT
+
+SUBMISSIONS
+
+FESTIVAL HIGHLIGHTS
+
+CONTACT
+
+Font for nav links: Montserrat Semi-Bold, gold color, spaced out slightly.
+
+5. HERO SECTION (MAIN BANNER)
+Large title in the center of the screen:
+SAMS FESTIVAL 2025 (font: Montserrat Extra-Bold, gold color, very large)
+
+Subtitle directly below:
+A national celebration of Indonesian cinema, art, and performance (white or light gold color, medium font size)
+
+Tagline in italics:
+One Nation. Many Stories.
+
+Background of the banner:
+
+Use subtle design elements inspired by Indonesian art:
+
+Borobudur or Prambanan temple silhouettes
+
+Batik patterns faded into the corners
+
+Wayang-style outlines
+
+These should be low-opacity and placed in the background so the text is fully readable.
+
+6. CALL-TO-ACTION BUTTONS
+Place two buttons below the tagline:
+
+Share Your Vision
+
+Button background: Royal Blue
+
+Text: Gold
+
+Border-radius: medium rounded
+
+Font: Montserrat Bold, all caps
+
+Learn More
+
+Button background: Gold
+
+Text: Royal Blue
+
+Same border-radius and font
+
+Add hover effect to both buttons (e.g. slight brightness increase or text boldening)
+
+7. MAIN BODY SECTIONS (AFTER BANNER)
+Use a scrolling page layout with alternating background colors and large section headers. Each section should be in a container with consistent width and padding.
+
+SECTION: ABOUT
+Title: ABOUT in gold
+
+Text in white: description of what SAMS Festival is and its mission.
+
+Use background: Royal Blue
+
+SECTION: SUBMISSIONS
+Title: SUBMISSIONS in gold
+
+Instructions for filmmakers/artists
+
+Include a button: “Submit Now” (Gold button, blue text)
+
+SECTION: FESTIVAL HIGHLIGHTS
+Title: FESTIVAL HIGHLIGHTS
+
+Use beige background
+
+Create image cards or boxes for featured events/films
+
+Cards should have soft shadows, gold borders, clean layout
+
+SECTION: CONTACT
+Title: CONTACT
+
+Include a contact form or email address
+
+Add social media icons (white or gold, clean style)
+
+Keep layout centered and simple
+
+8. FOOTER
+Background: Black or deep royal blue
+
+Text: White or gold
+
+Include links (same as nav), social media, copyright
+
+9. RESPONSIVENESS
+On mobile, make sure the nav bar collapses into a hamburger menu
+
+All buttons should stack and center
+
+Text size should scale appropriately
+
+Padding should adjust for small screens
+
+10. DESIGN NOTES
+Avoid any galaxy, stars, fantasy, or space themes.
+This is a grounded, cultural, national-level event.
+Make the site feel clean and modern, not flashy or cluttered.
+Use spacing and visual hierarchy to make content scannable.
+Use the image I attached as an inspiration for the design overhaul.
